@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuickNotes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href='/#index.html'>Home</a></li>
+                <li><a href='/#about.html'>About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="about">
+        <h2>About QuickNotes</h2>
+        <p>QuickNotes is a simple application for capturing and managing your ideas.</p>
+        <section>
+            <ol>
+                <li>Firstly, add your quicknotes</li>
+                <li>Mark it as done</li>
+                <li>Then Delete a completed note</li>
+            </ol>
+        </section>
+        <section class="features">
+            <ul>
+                <li>QuickNotes is built using HTML, CSS, and JavaScript.</li>
+                <li>It allows users to add, view, and delete notes.</li>
+                <li>The application is designed to be simple and user-friendly.</li>
+            </ul>
+        </section>
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                        <th>Shortcut</th>
+                        <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Enter</td>
+                        <td>Add the note</td>
+                        </tr>
+                        <tr>
+                        <td>Ctrl + S</td>
+                        <td>Save the file in VS Code</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        <form id="feedback-form">
+            <label for="name-input">Name</label>
+            <input type="text" id="name-input" placeholder="Enter your name..." required />
+            <label for= 'email'>Email</label>
+            <input type='email' id='email' placeholder='Enter your email...' required/>
+            <label for="feedback-input">Feedback</label>
+            <textarea id="feedback-input" placeholder="Type your feedback..." required></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </main>
+    <footer>
+      <p>&copy; 2026 QuickNotes. Built during Web Foundations.</p>
+    </footer>
+  </body>
+</html>
