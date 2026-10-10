@@ -1,8 +1,8 @@
 
-const statusEl = document.querySelector("status");
-const usersListEl = document.querySelector("users-list");
-const filterInput = document.querySelector("filter-input");
-const loadBtn = document.querySelector("load-users");
+const statusEl = document.querySelector("#status");
+const usersListEl = document.querySelector("#users-list");
+const filterInput = document.querySelector("#filter-input");
+const loadBtn = document.querySelector("#load-users");
 let allUsers = [];
 
 function setStatus(message, isError = false) {
