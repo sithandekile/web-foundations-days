@@ -1,0 +1,7 @@
+# Reflection
+
+The most difficult concept in the course was understanding how to keep shared data correct when many requests happen at the same time. It was easy to think of a seat as available based on what a page displayed, but that information can become outdated as soon as another customer tries to buy it. I worked through this by following the hold process step by step: lock the seat in a database transaction, check its current state, update it, and commit before telling the customer the hold succeeded. Thinking through what happens when two requests arrive together made the need for transactions and constraints much clearer.
+
+Based on the feedback I received, I would improve my capstone by making its assumptions and architecture diagram easier to understand. I would label the request flows more clearly and show which components serve browsing traffic versus which components make authoritative seat and order changes. I would also state the important traffic assumptions beside the estimates so a reader can tell what is measured and what is only an estimate.
+
+Next, I want to learn more about load testing and observability. I would like to test a system under realistic bursts, find its bottlenecks, and use metrics and traces to understand what is happening while it runs. That would help me move from proposing a design to validating that it can meet its speed, correctness, and fairness goals in practice.
